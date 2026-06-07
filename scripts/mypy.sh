@@ -6,6 +6,6 @@ cd "$(dirname "$0")/.."
 
 pyver=$(python -c 'import platform; major, minor, path = platform.python_version_tuple(); print(f"{major}.{minor}")')
 
-mypy --config-file mypy-$pyver.ini .
+mypy --config-file mypy.ini .
 
 
